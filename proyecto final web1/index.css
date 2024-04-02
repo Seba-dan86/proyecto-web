@@ -1,0 +1,68 @@
+.primera{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(161,114,15,1) 100%);
+background-attachment: fixed;
+}
+.segunda{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(161,114,15,1) 100%);
+background-attachment: fixed;
+
+}
+h3{
+    font-weight: bold;
+    font-size: 40px;
+    color:rgb(91, 53, 3)
+}
+p{
+    color:rgb(25, 25, 26);
+    font-weight: bold;
+}
+.inicio img{
+    width: 100vw ;
+    height: 300px ;
+}
+.productos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 15px;
+
+}
+.productos p{
+    margin: 10px 10px;
+}
+.lubricante{
+
+    overflow: hidden;
+    background-color: #666161;
+    border: 1px solid black;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+
+}
+.lubricante img{
+
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 60%, rgba(0,212,255,1) 100%);
+}
+.lubricante p{
+    color:aliceblue;
+    padding: 5px 15px;
+}
+.lubricante button{
+    background-color: #ce9223;
+    border-radius: 45px;
+margin-left: 30px;
+width: 80%;
+ }
+ .Elaion{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    gap:  5px;
+ }
