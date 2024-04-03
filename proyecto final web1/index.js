@@ -1,6 +1,6 @@
-const boton= document.getElementById("btn");
+// const btn= document.getElementById("btn");
 
-function boton(){
-    alert("hiciste click en ver mas")
-}
-boton.addEventListener("click",boton());
+// function boton(){
+//     alert("hiciste click en ver mas")
+// }
+// btn.addEventListener("click",boton());
