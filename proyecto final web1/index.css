@@ -2,50 +2,77 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(161,114,15,1) 100%);
-background-attachment: fixed;
+    background: rgb(120,99,4);
+    background: linear-gradient(279deg, rgba(120,99,4,1) 0%, rgba(112,94,28,1) 100%);
+    background-attachment: fixed;
 }
 .segunda{
-    background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(161,114,15,1) 100%);
-background-attachment: fixed;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(153,153,230,1) 95%, rgba(0,212,255,1) 100%);
+    background-attachment: fixed;
+
+}
+.tercera{
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(153,153,230,1) 95%, rgba(0,212,255,1) 100%);
+    background-attachment: fixed;
+
+}
+.cuarta{
+    background: rgb(6,6,54);
+    background: linear-gradient(76deg, rgba(6,6,54,1) 2%, rgba(48,34,208,1) 78%);
+    background-attachment: fixed;
 
 }
 h3{
     font-weight: bold;
     font-size: 40px;
-    color:rgb(91, 53, 3)
+    color:rgb(247, 244, 241)
 }
 p{
-    color:rgb(25, 25, 26);
+    color:rgb(24, 24, 32);
     font-weight: bold;
+    font-size: larger;
+    text-align: justify;
+    background-color: #a1731d;
+    padding: 20px;      
 }
 .inicio img{
-    width: 100vw ;
-    height: 300px ;
+    width: 100vmax ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.detalles{
+    position: absolute;
+    width: 40%;
+    top: 50px;
+    left: 50px;
 }
 .productos{
+    margin: 20px;
+    position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 15px;
+    width: 200;
 
 }
 .productos p{
     margin: 10px 10px;
 }
 .lubricante{
-
-    overflow: hidden;
-    background-color: #666161;
-    border: 1px solid black;
-    width: 250px;
-    height: 500px;
+    align-items: center;
+    width: 300px;
+    height: 600px;
     border-radius: 20px;
     margin: 10px 50px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 60%, rgba(0,212,255,1) 100%);
 }
 .lubricante:hover{
     transform: scale(1.1);
@@ -55,9 +82,7 @@ p{
 
 }
 .lubricante img{
-
-    background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 60%, rgba(0,212,255,1) 100%);
+    position: relative;
 }
 .lubricante p{
     color:aliceblue;
@@ -66,30 +91,35 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 60%, rgba(
 .lubricante button{
     background-color: #ce9223;
     border-radius: 45px;
-margin-left: 30px;
-width: 80%;
-height: 30px;
+    margin-left: 30px;
+    width: 80%;
+    height: 30px;
 
-border: none;
+    border: none;
 
  }
  .lubricante button:hover{
-    background-color: #a1731d;
-   
-font-weight: bold;}
+    background-color: #a1731d;  
+    font-weight: bold;
+}
  .Elaion{
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 10px;
-   justify-content: center;
+    justify-content: center;
  }
- .lista h2{
-    color:rgb(91, 53, 3);
-    font-weight: bold;
-    font-size: 40px;
-    margin: 10px 10px;
+ .Auro{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    justify-content: center;
+ }
+ .lista{
+    position: flex;
     text-align: center;
-}
+    width: 800;
+    
+ }
 
  .listaAceite{
    display: flex;
@@ -98,7 +128,44 @@ font-weight: bold;}
    font-weight: bold;
    font-size: 20px;
    height: 350px;
+   gap: 20px;
  }
  .listaAceite a{
     text-decoration: none;
  }
+
+ .ExtraVidaGrid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    justify-content: center;
+ }
+
+ .extraVida{
+    align-items: center;
+    width: 300px;
+    height: 900px;
+    border-radius: 20px;
+    margin: 10px 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 60%, rgba(0,212,255,1) 100%);
+}
+.extraVida:hover{
+    transform: scale(1.1);
+    translate:10px ;
+    transition: 1s;
+}
+.extraVida p{
+    color:rgb(253, 253, 253);
+    background-color: blue;
+    padding: 5px 15px;
+}
+
+.extraVida img{
+    position: relative;
+}
+.extraVida p{
+    color:aliceblue;
+    padding: 5px 15px;
+}
