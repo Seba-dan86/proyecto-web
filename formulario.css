@@ -1,0 +1,63 @@
+body{
+    background-color: #afc9e3;
+}
+
+.form{
+    border:2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    height: 80%;
+    width: 70%;
+}
+.cliente{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 200px;
+
+}
+.vehiculo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 200px;
+}
+.cliente input{
+    border-style: none;
+    background-color: #afc9e3;
+    border-bottom: 1px solid black;
+    margin: 10px;
+}
+.vehiculo input{
+    border-style: none;
+    background-color: #afc9e3;
+    border-bottom: 1px solid black;
+    margin: 10px;
+}
+.vehiculo button{
+    border:1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #5ca5ed;
+   width: 40%;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+}
+.vehiculo button:hov{
+    background-color: white;
+    color: #5ca5ed;
+}
+#datos{
+
+    width: 50px;
+    height: 70px;
+}
