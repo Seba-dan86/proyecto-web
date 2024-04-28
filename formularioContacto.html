@@ -7,34 +7,39 @@
     <title>Reserva de Turno</title>
 </head>
 <body>
-    <h2>Formulario para reservas en lubricentro </h2>
-    <div class="form">
-        <form action="">
+<div class="principal">
+    <header>Formulario para reservas en lubricentro </header>
+
+        <form action="" class="form" id="form">
             <div class="cliente">
                 <h3>Datos del cliente</h3>
-               <input type="text" id="nombre" placeholder="Nombre">
-               <input type="text" id="apellido" placeholder="Apellido">
-               <input type="email" id="email" placeholder="Email">
+
+               <label for="nombre">Nombre</label>
+                <input type="text" id="nombre">
+                <label for="apellido">apellido</label>
+               <input type="text" id="apellido" >
+               <label for="email">email</label>
+               <input type="email" id="email" >
+               <label for="patente">patente</label>
+
+               <input type="text" id="patente"  name="patente">
+               <label for="Kilometros">Kilometros</label>
+               <input type="text" id="Kilometros"  name="Kilometros">
+<p>seleccione una opcion :</p>
+               <select name="service" id="service">
+                   <option value="Aceite">Cambio de Aceite</option>
+                   <option value="Alineacion">Alineacion</option>
+                   <option value="Cambio de Cubiertas">Cambio de Cubiertas</option>
+                   <option value="Escaneo">Escaneo</option>
+               </select>
+
+               <button onclick="mostrar()" id="btn">enviar</button>
+
 
             </div>
-            <hr>
-            <hr>
-            <div class="vehiculo">
-                <h3>Datos del vehiculo</h3>
-                <input type="text" id="patente" placeholder="Patente" name="patente">
-                <input type="text" id="modelo" placeholder="Modelo" name="modelo">
 
-                <select name="service" id="service">
-                    <option value="Aceite">Cambio de Aceite</option>
-                    <option value="Alineacion">Alineacion</option>
-                    <option value="Cambio de Cubiertas">Cambio de Cubiertas</option>
-                    <option value="Escaneo">Escaneo</option>
-                </select>
-
-                <button id="enviar">enviar</button>
-            </div>
         </form>
-        <p id="datos"></p>
+       <p id="datos"></p>
     </div>
     <script src="formulario.js"></script>
 </body>
