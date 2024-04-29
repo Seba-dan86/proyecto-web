@@ -5,7 +5,7 @@
     background-repeat: no-repeat;
     background-position: center;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
 
 
 
@@ -55,10 +55,10 @@ margin-bottom: 5px;
 
     border:2px solid aliceblue;
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
     margin: 30px 80px;
-    height: 80vh;
-    width: 70vw;
+    height: 100vh;
+    width: 50vw;
 
 }
 .cliente{
@@ -68,6 +68,10 @@ margin-top: 5px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+}
+.cliente a{
+margin-top: 15px;
 
 }
 
@@ -80,6 +84,9 @@ margin-top: 5px;
     margin: 10px;
 
 
+}
+.cliente img{
+    margin-top: 20px ;
 }
 
 .cliente button{
