@@ -1,3 +1,12 @@
 body{
-    background-image: url(./assets/creadaIA.jpg);
+    background-color: grey;
+}
+.confirmacion{
+    background-color: rgb(247, 244, 241);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 40%;
+    margin-top: 20px;
+
 }

@@ -10,7 +10,7 @@
 <div class="principal">
     <header>Formulario para reservas en lubricentro </header>
 
-        <form action="" class="form" id="form">
+        <form  class="form" id="form" >
             <div class="cliente">
 
                 <h3>Datos del cliente</h3>
@@ -20,14 +20,14 @@
                 <label for="apellido">apellido</label>
                <input type="text" id="apellido" >
                <label for="email">email</label>
-               <input type="email" id="email" >
+               <input type="email" id="email" autocomplete="off">
                <label for="patente">patente</label>
-
-               <input type="text" id="patente"  name="patente">
-               <label for="Kilometros">Kilometros</label>
-               <input type="text" id="Kilometros"  name="Kilometros">
-               <input type="date" name="turno" id="turno">
-<p>seleccione una opcion :</p>
+               <input type="text" id="patente" >
+               <label for="kilometros">Kilometros</label>
+               <input type="number" id="kilometros"  >
+               <label for="turno">Fecha de turno</label>
+               <input type="date"  id="turno">
+               <p>seleccione una opcion :</p>
                <select name="service" id="service">
                    <option value="Aceite">Cambio de Aceite</option>
                    <option value="Alineacion">Alineacion</option>
@@ -35,7 +35,7 @@
                    <option value="Escaneo">Escaneo</option>
                </select>
 
-               <button onclick="mostrar()" id="btn">enviar</button>
+               <button  id="btn">enviar</button>
                <a href="./index.html">Volver a la pagina principal</a>
 
 

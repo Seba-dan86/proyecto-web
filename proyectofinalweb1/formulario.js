@@ -1,33 +1,22 @@
 
 
+const nombre=document.getElementById("nombre");
+const apellido=document.getElementById("apellido");
+const email=document.getElementById("email");
+const patente=document.getElementById("patente");
+const datos=document.getElementById("datos");
+//cnnst km=document.getElementById("kilometros").value;
+// const service=document.getElementById("service").value;
+// const turno=document.getElementById("turno").value;
 
 
-    const mostrar=async()=>{
-        //alert("esta conectado");
-
-        const nombre=document.getElementById("nombre").value;
-        const apellido=document.getElementById("apellido").value;
-        const email=document.getElementById("email").value;
-        const patente=document.getElementById("patente").value;
-        const km=document.getElementById("kilometros").value;
-        const service=document.getElementById("service").value;
-        const turno=document.getElementById("turno").value;
-        const datos=document.getElementById("datos");
-        const formData = new FormData();
-  formData.append("nombre", nombre);
-  formData.append("apellido", apellido);
-  formData.append("email", email);
-  formData.append("patente", patente);
-  formData.append("km", km);
-  formData.append("service", service);
-  formData.append("turno", turno);
 
 
-        for(let formdata1 of formData){
-            console.log(formdata1);}
+const btn=document.getElementById("btn");
+btn.addEventListener("click", function mostrar(){
 
-            datos.textContent = formdata1;
-        }
+    datos.textContent=nombre.value + apellido.value + email.value + patente.value
 
-
+    console.log(datos);
+});
 
