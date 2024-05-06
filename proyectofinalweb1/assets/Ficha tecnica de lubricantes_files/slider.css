@@ -1,18 +1,7 @@
-body{
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-background-attachment: fixed;
-
-
-}
-
 section{
 display: flex;
 width: 600px;
 height: 430px;
-margin: auto;
 }
 /* section img{
     width: 0px ;
