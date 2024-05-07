@@ -15,7 +15,7 @@ const datos=document.getElementById("datos");
 const btn=document.getElementById("btn");
 btn.addEventListener("click", function mostrar(){
 
-    datos.textContent=nombre.value + apellido.value + email.value + patente.value
+    datos.innerHTML=nombre.value + apellido.value + email.value + patente.value
 
     console.log(datos);
 });

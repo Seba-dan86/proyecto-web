@@ -18,6 +18,7 @@ if(contador>imagenes.length-1){
 }
 document.Imagen.src=imagenes[contador];
 
+
 });
 sliderIzquierdo.addEventListener("click",function moverIzquierda() {
 

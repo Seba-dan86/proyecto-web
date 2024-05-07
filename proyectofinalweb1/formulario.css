@@ -1,6 +1,6 @@
 .principal{
 
-    background-image: url(./assets/azul32.jpg);
+    background-image: url(./assets/creadaIA.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -20,7 +20,7 @@
     padding: 20px;
     font-size: 35px;
     font-weight: bold;
-    background-color: transparent;
+    background: color #3e3e3e;;
     text-shadow: 2px 2px 2px;
 
  }

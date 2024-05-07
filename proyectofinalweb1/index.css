@@ -10,11 +10,10 @@ body{
 
 }
 header{
-
-    background-color: rgb(214, 166, 45);
+backdrop-filter: blur(20px);
     width: 100vw;
     height: 150px;
-
+border-bottom: 2px solid #fff;
     }
 
 header ul{
@@ -30,17 +29,19 @@ header ul{
         color:var(--p-color1);
         font-weight: bold;
         font-size: 25px;
-        text-shadow: 1px 1px 1px;
         margin-bottom: 20px;
-
+        border: 2px solid #fff;
+        border-radius: 25px;
+        padding: 15px;
     }
 
-    header  ul li a:hover{
+    header  ul li a:hover {
 color: var(--color2);
-border-top: 2px solid black;
-
+background: #fff;
 
     }
+
+
  header ul li {
     list-style: none;
     flex-direction: row;
@@ -63,17 +64,8 @@ font-size: var(--font-size);
 }
 .productos{
     width: 30%;
-
-    /* display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: start; */
-
 }
-.imgConFondo{
-    filter: brightness(1.1);
-    mix-blend-mode: multiply;
-}
+
 
 /* colores y fuentes */
 :root{
@@ -100,7 +92,7 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-left: 70px;
     padding-bottom: 10px;
 
