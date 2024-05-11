@@ -1,9 +1,9 @@
-const imagenes=["./assets/Elaion.webp",
-"./assets/Elaion_FS540.webp",
-"./assets/Elaion_TS1040.webp",
-"./assets/Elaion_MI1540.webp",
-"./assets/Elaion_MI2050.webp",
-"./assets/Elaion_COMPETICION.webp"];
+const imagenes=["../assets/Elaion.webp",
+"../assets/Elaion_FS540.webp",
+"../assets/Elaion_TS1040.webp",
+"../assets/Elaion_MI1540.webp",
+"../assets/Elaion_MI2050.webp",
+"../assets/Elaion_COMPETICION.webp"];
 
 document.Imagen.src=imagenes[0];
 let contador=0;

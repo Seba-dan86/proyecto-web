@@ -1,14 +1,30 @@
+/* colores y fuentes */
+:root{
+    --p-color1: #fff;
+    --color2:#000;
+    --font-size1: 40px;
+    --font-size:25px;
+    --font-family: Roboto
+    }
+
+
+
+
+/* Al body le sacamos los estilos del navegador con el padding , margin y el box-sizing
+ *con un BG que cubra toda la pantalla , que no se repita y que este fijo al scroll
+*/
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url(./assets/img1.png);
+    background-image: url(../assets/img1.png);
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
 
 }
+/* al header que tiene la barra de navegacion le ponemos un fondo borroso y un ancho de todo el viewport */
 header{
 backdrop-filter: blur(20px);
     width: 100vw;
@@ -16,37 +32,27 @@ backdrop-filter: blur(20px);
 border-bottom: 2px solid #fff;
     }
 
-header ul{
-    display: flex;
-   }
     header h2{
         margin-left: 20px;
     }
-
-    header a{
-
-        text-decoration: none;
-        color:var(--p-color1);
-        font-weight: bold;
-        font-size: 25px;
-        margin-bottom: 20px;
-        border: 2px solid #fff;
-        border-radius: 25px;
-        padding: 15px;
-    }
+    header ul{
+        display: flex;
+       }
 
     header  ul li a:hover {
 color: var(--color2);
-background: #fff;
+background:var(--p-color1);
 
     }
 
-
+/*  a las lista que es el menu de navegacion le sacamos los puntos por defecto
+alineamos en fila al centro y espacio entre los items
+*/
  header ul li {
     list-style: none;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-left: 300px;
     padding-bottom: 10px;
 width: 7%;
@@ -55,26 +61,31 @@ color: var(--p-color1);
 font-size: var(--font-size);
 
 }
-.container{
+/*  */
+header a{
+
+    text-decoration: none;
+    color:var(--p-color1);
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+/*  */
+.productos{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
     margin-left: 70px;
-}
-.productos{
     width: 30%;
 }
 
 
-/* colores y fuentes */
-:root{
---p-color1: #fff;
---color2:#000;
---font-size1: 40px;
---font-size:25px;
---font-family: Roboto
-}
+
+
 
 /* css definitivo */
 p{
