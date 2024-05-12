@@ -1,22 +1,21 @@
 
 
-const nombre=document.getElementById("nombre");
-const apellido=document.getElementById("apellido");
-const email=document.getElementById("email");
-const patente=document.getElementById("patente");
-const datos=document.getElementById("datos");
-//cnnst km=document.getElementById("kilometros").value;
-// const service=document.getElementById("service").value;
-// const turno=document.getElementById("turno").value;
+const nombre=document.getElementById('nombre').value;
+const apellido=document.getElementById('apellido').value;
+const email=document.getElementById('email').value;
+
+
+const datos=document.getElementById('datos');
 
 
 
-
-const btn=document.getElementById("btn");
+const btn=document.getElementById('btn');
 btn.addEventListener("click", function mostrar(){
+    console.log("estamos conectados");
+    const newElement=document.createElement('p');
+    newElement.innerText=nombre + " "+ apellido+ " "+ email;
+    datos.append(newElement);
 
-    datos.innerHTML=nombre.value + apellido.value + email.value + patente.value
-
-    console.log(datos);
+console.log(datos);
 });
 

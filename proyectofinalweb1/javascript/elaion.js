@@ -28,3 +28,15 @@ sliderIzquierdo.addEventListener("click",function moverIzquierda() {
     }
     document.Imagen.src=imagenes[contador];
 });
+
+//  const btnInfo=document.getElementById('btnInfo');
+//  const divLubricante=document.getElementById('lubricante');
+
+// btnInfo.addEventListener('click',function info(){
+//     console.log("funciona");
+//     const newElement=document.createElement('p');
+//     newElement.innerHTML="elemento creado";
+//     divLubricante.appendChild(newElement);
+
+
+// });

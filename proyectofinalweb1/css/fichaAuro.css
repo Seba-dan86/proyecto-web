@@ -25,8 +25,8 @@ body{
     margin-left: 50px;
     margin-top: 100px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+grid-template-columns: auto auto auto;
+    grid-template-rows: 3fr 3fr 3fr ;
     gap: 20px;
     padding: 10px;
     height: 90vh;
@@ -59,14 +59,10 @@ height: 90%;
     text-align: center;
     font-size: 30px;
     border-radius: 20px;
+    border: 2px solid var(--color2);
 
 }
-.lubricante img:hover{
 
-
-    transform: translateY(-10px);
-    transition: .3s ;
-}
 
 
 footer{
@@ -87,3 +83,57 @@ footer img:hover{
     transform: translateY(-10px);
     transition: .3s ;
 }
+/* al header que tiene la barra de navegacion le ponemos un fondo borroso y un ancho de todo el viewport */
+header{
+    display: flex;
+            width: 100vw;
+            height: 150px;
+            border-bottom: 2px solid var(--p-color1);
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+
+
+            }
+
+            header h2{
+                margin-left: 20px;
+            }
+            header ul{
+                display: flex;
+               }
+
+            header  ul li a:hover {
+        color: var(--color2);
+        background:var(--p-color1);
+
+            }
+
+        /*  a las lista que es el menu de navegacion le sacamos los puntos por defecto
+        alineamos en fila al centro y espacio entre los items
+        */
+         header ul li {
+            list-style: none;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-between;
+            margin-left: 100px;
+            padding-bottom: 10px;
+             width: 310px;
+             color: var(--p-color1);
+             font-size: var(--font-size);
+
+        }
+        /*  */
+        header a{
+
+            text-decoration: none;
+            color:var(--p-color1);
+            font-weight: bold;
+            font-size: 25px;
+            margin-bottom: 20px;
+            border: 2px solid #fff;
+            border-radius: 25px;
+            padding: 15px;
+        }
