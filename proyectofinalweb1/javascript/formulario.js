@@ -1,21 +1,18 @@
 
 
-const nombre=document.getElementById('nombre').value;
-const apellido=document.getElementById('apellido').value;
-const email=document.getElementById('email').value;
-
 
 const datos=document.getElementById('datos');
+const btn=document.getElementById('btn');
 
 /* HAY QUE VALIDAR LOS DATOS INGRESADOS */
 
-const btn=document.getElementById('btn');
-btn.addEventListener("click", function mostrar(){
-    console.log("estamos conectados");
-    const newElement=document.createElement('p');
-    newElement.innerText=nombre + " "+ apellido+ " "+ email;
-    datos.append(newElement);
+btn.addEventListener("submit", function mostrar(){
 
-console.log(datos);
+    const nombre=document.getElementById('nombre').value;
+    const apellido=document.getElementById('apellido').value;
+    const email=document.getElementById('email').value;
+    const phone=document.getElementById('telefono').value;
+    const data= nombre + " " + apellido + " " + email + " " + phone;
+    console.log(data);
 });
 
