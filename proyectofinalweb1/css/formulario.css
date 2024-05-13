@@ -1,0 +1,15 @@
+body{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+    background-image: url(../assets/img1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+
+
+
+
+}

@@ -1,13 +1,27 @@
+/* colores y fuentes */
+:root{
+    --p-color1: #fff;
+    --color2:#000;
+    --font-size1: 40px;
+    --font-size:25px;
+    --font-family: Roboto
+    }
+
+
+
+
+/* Al body le sacamos los estilos del navegador con el padding , margin y el box-sizing
+ *con un BG que cubra toda la pantalla , que no se repita y que este fijo al scroll
+*/
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url(./assets/img1.png);
+    background-image: url(../assets/img1.png);
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
 header{
     backdrop-filter: blur(20px);
     padding-bottom: 20px;
@@ -50,11 +64,24 @@ header ul li {
     height: 80px;
 
 }
-.container{
+/*  */
+header a{
+
+    text-decoration: none;
+    color:var(--p-color1);
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+/*  */
+.productos{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
     margin-left: 70px;
 }
 .productos{
@@ -66,14 +93,8 @@ header ul li {
 }
 
 
-/* colores y fuentes */
-:root{
---p-color1: #fff;
---color2:#000;
---font-size1: 40px;
---font-size:25px;
---font-family: Roboto
-}
+
+
 
 /* css definitivo */
 p{
@@ -91,10 +112,10 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+
     margin-left: 70px;
     padding-bottom: 10px;
-
     padding-bottom: 5px;
     color: var(--p-color1);
     font-size: var(--font-size);
