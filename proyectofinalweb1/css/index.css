@@ -4,7 +4,6 @@
     --color2:#000;
     --font-size1: 40px;
     --font-size:25px;
-    --font-family: Roboto
     }
 
 
@@ -22,6 +21,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
 header{
     backdrop-filter: blur(20px);
     padding-bottom: 20px;
@@ -32,6 +32,8 @@ header{
 header ul{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 40px;
     }
 
 header h2{
@@ -62,7 +64,7 @@ header ul li {
     color: var(--p-color1);
     font-size: var(--font-size);
     height: 80px;
-
+    flex: 1 0 200px;
 }
 /*  */
 header a{
@@ -91,6 +93,8 @@ header a{
 *{
     text-shadow: 2px 2px 4px #000;
 }
+
+
 
 
 

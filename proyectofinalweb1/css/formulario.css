@@ -1,6 +1,6 @@
 
 :root{
-    --p-color1: #fff;
+    --p-color1: #664e4e;
     --color2:#000;
     --font-size1: 40px;
     --font-size:25px;
@@ -78,16 +78,24 @@ backdrop-filter: blur(10px);
     margin-bottom: 10px;
     font-weight: bold;
     font-size: 20px;
+    background-color: #664e4e;
+    border-radius: fill;
+    border-color: black;
 }
 .formulario a{
 
     
     text-decoration: none;
-    color:var(--p-color1);
+    color:var(--p-color2);
+    background-color: #664e4e;
     font-weight: bold;
     font-size: 25px;
     margin-bottom: 20px;
-    border: 2px solid #fff;
+    border: 2px solid black;
     border-radius: 25px;
     padding: 15px;
+}
+
+.formulario select{
+    background-color: darkgoldenrod;
 }

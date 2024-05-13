@@ -7,7 +7,7 @@ const email=document.getElementById('email').value;
 
 const datos=document.getElementById('datos');
 
-
+/* HAY QUE VALIDAR LOS DATOS INGRESADOS */
 
 const btn=document.getElementById('btn');
 btn.addEventListener("click", function mostrar(){

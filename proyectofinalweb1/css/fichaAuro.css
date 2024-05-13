@@ -6,12 +6,11 @@
     --font-size:25px;
 
     }
-h2{
-    color: var(--p-color1);
-    font-size: var(--font-size1);
-    text-align: center;
-}
 
+*{
+    text-shadow: 2px 2px 4px #000;
+}
+    
 body{
     background-image:  url(../assets/img1.png);
     background-size:cover;
@@ -85,55 +84,58 @@ footer img:hover{
 }
 /* al header que tiene la barra de navegacion le ponemos un fondo borroso y un ancho de todo el viewport */
 header{
+    backdrop-filter: blur(20px);
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #fff;
+}
+
+header ul{
     display: flex;
-            width: 100vw;
-            height: 150px;
-            border-bottom: 2px solid var(--p-color1);
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 40px;
+    }
 
+header h2{
+    margin: 40px;
+}
 
+header a{
+    text-decoration: none;
+    color:var(--p-color1);
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+    border: 4px solid #332609d7;
+    border-radius: 25px;
+    padding: 15px;
+}
 
-            }
+header ul li a:hover {
+color: var(--color2);
+background: #5c571a8f;
 
-            header h2{
-                margin-left: 20px;
-            }
-            header ul{
-                display: flex;
-               }
+}
 
-            header  ul li a:hover {
-        color: var(--color2);
-        background:var(--p-color1);
+header ul li {
+    list-style: none;
+    align-items: center;
+    width: 200px;
+    color: var(--p-color1);
+    font-size: var(--font-size);
+    height: 80px;
+    flex: 1 0 200px;
+}
+/*  */
+header a{
 
-            }
-
-        /*  a las lista que es el menu de navegacion le sacamos los puntos por defecto
-        alineamos en fila al centro y espacio entre los items
-        */
-         header ul li {
-            list-style: none;
-            flex-direction: row;
-            align-items: flex-end;
-            justify-content: space-between;
-            margin-left: 100px;
-            padding-bottom: 10px;
-             width: 310px;
-             color: var(--p-color1);
-             font-size: var(--font-size);
-
-        }
-        /*  */
-        header a{
-
-            text-decoration: none;
-            color:var(--p-color1);
-            font-weight: bold;
-            font-size: 25px;
-            margin-bottom: 20px;
-            border: 2px solid #fff;
-            border-radius: 25px;
-            padding: 15px;
-        }
+    text-decoration: none;
+    color:var(--p-color1);
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    padding: 15px;
+}
