@@ -21,8 +21,6 @@ sliderIzquierdo.addEventListener("click",function moverIzquierda() {
         contador=imagenes.length-1;
     } 
     document.Imagen.src=imagenes[contador];
-   
-
 
 });
 
