@@ -1,9 +1,5 @@
-const imagenes=["./assets/Elaion_AURO_FR530.webp",
-"./assets/Elaion_AURO_HYBRID_D1020.webp",
-"./assets/Elaion_AURO_PLUS540.webp",
-"./assets/Elaion_COMPETICION.webp",
-"./assets/extravida_xv_300.png"];
-
+const imagenes=["../assets/slider1.jpeg","../assets/slider2.jpeg","../assets/slider3.jpeg","../assets/slider4.jpeg","../assets/slider5.jpeg"];
+const container=document.querySelector(".containerSlider");
 document.Imagen.src=imagenes[0];
 let contador=0;
 const sliderDerecho=document.querySelector(".sliderDerecho");
@@ -25,4 +21,6 @@ sliderIzquierdo.addEventListener("click",function moverIzquierda() {
         contador=imagenes.length-1;
     }
     document.Imagen.src=imagenes[contador];
+container.style.backgroundImage ="url(imagenes)" ;
+
 });
